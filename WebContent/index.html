@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Questionário Covid-19</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://ufop.br/sites/default/files/slide_-_1177x432_px_-_coronaaaaa_1.png" alt="" width="500" height="200">
+    <p class="lead">Ajudaremos você a saber qual a probabilidade de ter Covid-19(CoronaVirus).</p>
+  </div>
+
+			<form method="get" action="A2" class="needs-validation" novalidate >
+			<h4 class="mb-3">Dados Cadastrais</h4>
+          <div class=" mb-3">
+            <label for="firstName">Nome</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Patrick" name="Nome" value="" required>
+            <div class="invalid-feedback">
+              Campo Obrigatorio.
+            </div>
+          </div>
+          
+                  <div class="mb-3">
+          <label for="address">Endereço</label>
+          <input type="text" class="form-control" id="address" name="Endereco" placeholder="Av.Brasil 200" required>
+          <div class="invalid-feedback">
+            Campo Obrigatorio.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" name="Email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        <br>
+        <hr class="mb-4">
+        <br>
+        <h4 class="mb-3">Questionário</h4>
+        <br>
+				<h5 class="mb-3">1 - Qual a sua idade?</h5>
+				<div class="mb-3">
+					<select class="custom-select d-block w-100" id="questao1" name="questao1" required>
+						<option value="">Selecione</option>
+						<option value="1">0 a 24 anos</option>
+						<option value="2">25 a 39 anos</option>
+						<option value="3">40 a 59 anos</option>
+						<option value="4">60 a 75 anos</option>
+						<option value="5">Acima de 75 anos</option>
+					</select>
+					<div class="invalid-feedback">Campo Obrigatório.</div>
+				</div>
+
+				<h5 class="mb-3">2 ‌–‌ ‌Quantas‌ ‌vezes‌ ‌você‌ ‌sai‌ ‌de‌
+					‌casa‌ ‌durante‌ ‌a‌ ‌semana?‌</h5>
+				<div class="mb-3">
+					<select class="custom-select d-block w-100" id="questao2" name="questao2" required>
+						<option value="">Selecione</option>
+						<option value="20">10 a 20 vezes</option>
+						<option value="17">8 a 10 vezes</option>
+						<option value="12">5 a 8 vezes</option>
+						<option value="8">3 a 5 vezes</option>
+						<option value="3">1 a 3 vezes</option>
+					</select>
+					<div class="invalid-feedback">Campo Obrigatório.</div>
+				</div>
+
+				<h5 class="mb-3">3 – Quais as formas de isolamento você acha
+					mais adequado diante do Covid-19?‌</h5>
+				<div class="mb-3">
+					<select class="custom-select d-block w-100" id="questao3" name="questao3" required>
+						<option value="">Selecione</option>
+						<option value="1">Lock-Down Horizontal e Completo</option>
+						<option value="9">Lock-Down Horizontal e Parcial</option>
+						<option value="25">Isolamento Vertical</option>
+						<option value="25">Isolamento Transversal</option>
+						<option value="50">Sem qualquer tipo de isolamento</option>
+					</select>
+					<div class="invalid-feedback">Campo Obrigatório.</div>
+				</div>
+
+				<h5 class="mb-3">4 – Se você apresentasse os sintomas de febre
+					e tosse seca, o que você faria?‌</h5>
+				<div class="mb-3">
+					<select class="custom-select d-block w-100" id="questao4" name="questao4" required>
+						<option value="">Selecione</option>
+						<option value="10">Chamaria alguém para cuidar de mim</option>
+						<option value="20">Procuraria um posto de saúde</option>
+						<option value="20">Iria à farmácia comprar cloroquina</option>
+						<option value="4">Ficaria em casa em observação</option>
+						<option value="1">Ficaria em casa em isolamento e observação</option>
+					</select>
+					<div class="invalid-feedback">Campo Obrigatório.</div>
+				</div>
+
+				<h5 class="mb-3">5 – Diante da pandemia, o que você considera
+					mais importante ?‌</h5>
+				<div class="mb-3">
+					<select class="custom-select d-block w-100" id="questao5" name="questao5" required>
+						<option value="">Selecione</option>
+						<option value="20">Preservar a economia a qualquer curso.</option>
+						<option value="15">Preservar a economia, fazendo um relaxamento
+							moderado da quarentena</option>
+						<option value="10">Preservar a economia e a saúde da sociedade como
+							um todo</option>
+						<option value="4">Preservar a minha saúde seguindo recomendações de
+							entidades públicas</option>
+						<option value="1">Seguir à risca as recomendações da OMC
+							(Organização Mundial da Saúde)</option>
+					</select>
+					<div class="invalid-feedback">Campo Obrigatório.</div>
+				</div>
+				<hr class="mb-4">
+				<button class="btn btn-primary btn-lg btn-block" type="submit">Calcular probabilidade de contaminação</button>
+			</form>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 Developed by Patrick Costa and Allan Fonseca</p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="form-validation.js"></script></body>
+</html>
